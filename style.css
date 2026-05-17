@@ -1,0 +1,62 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table{
+    display: flex;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__counter {
+    color: white;
+    font-size: 50px;
+    line-height: 0.5;
+    font-weight: 600;
+    font-family: system-ui;
+}
+
+/* Фон полноэкранный */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://avatars.mds.yandex.net/i?id=7f82d864355b90e6376113571a6d7e09bc04094a-3986207-images-thumbs&n=13') ; /* замените на любую подходящую картинку */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+.canvas {
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.0);
+}
+
+/* Контейнер таблицы по-прежнему поверх фона */
+.table {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
